@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.min.js"></script>
+    <title>Carousel</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-4 offset 4">
+
+                <!-- div du carousel -->
+                <div class="carousel slide" data-bs-ride="carousel" id="carouselExo">
+                    <!-- carousel slide => animation en slides -->
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------ -->
+                    <!-- div des indicateurs de position -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExo" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                        <!-- active définit le bouton actif à l'ouverture de la page -->
+                        <button type="button" data-bs-target="#carouselExo" data-bs-slide-to="1"></button>
+                        <!-- "data-bs-slide-to="n"" => le bouton renvoie vers la photo numéro n dans le carousel -->
+                        <button type="button" data-bs-target="#carouselExo" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#carouselExo" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#carouselExo" data-bs-slide-to="4"></button>
+                    </div>
+<!-- ------------------------------------------------------------------------------------------------------------------------------ -->
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------ -->
+                    <!-- div du contenu du carousel -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <!-- détermine la photo exposée en premier ET correspondant a l'indicateur actif en premier -->
+                            <img src="./img/img1.jpg" alt="photo 1" class="d-block w-100">
+                            <!-- d-*-block => crée un block d'affichage pour la photo du carousel / w-50 => width = 50% -->
+                            <div class="carousel-caption">
+                                <h3>
+                                    Cette photo est random
+                                </h3>
+                                <p>
+                                    ... Et probablement très jolie
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/img2.jpg" alt="photo random 2" class="d-block w-100">
+                            <div class="carousel-caption">
+                                <h3>
+                                    Cette photo aussi est random
+                                </h3>
+                                <p>
+                                    ... Et probablement très sympa
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/img3.jpg" alt="photo random 3" class="d-block w-100">
+                            <div class="carousel-caption">
+                                <h3>
+                                    Cette photo pas mal random aussi
+                                </h3>
+                                <p>
+                                    ... Et probablement très agréable
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/img4.jpg" alt="photo random 4" class="d-block w-100">
+                            <div class="carousel-caption">
+                                <h3>
+                                    Cette photo est random, mais pas autant que les autres
+                                </h3>
+                                <p>
+                                    ... Et probablement très photographique
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/img5.jpg" alt="photo random 5" class="d-block w-100">
+                            <div class="carousel-caption">
+                                <h3>
+                                    Cette photo est random, mais pas moins que d'autres
+                                </h3>
+                                <p>
+                                    ... Et probablement très probable
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+<!-- ------------------------------------------------------------------------------------------------------------------------------ -->
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------ -->
+                    <!-- div des boutons "précédent" et "suivant" du carousel -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExo" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExo" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+<!-- ------------------------------------------------------------------------------------------------------------------------------ -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
